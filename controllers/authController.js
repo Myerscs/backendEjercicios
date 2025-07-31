@@ -90,5 +90,5 @@ export const updateProfile = async (req, res, next) => {
     await User.update(req.body, { where: { id: req.user.id } });
     const updated = await User.findByPk(req.user.id, { attributes: { exclude: ['password'] } });
     res.json(updated);
-  } catch (err) { next(err); }
+  } catch (err) { next(err); } 
 };

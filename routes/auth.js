@@ -3,6 +3,7 @@ import * as ctrl from '../controllers/authController.js';
 import { protect } from '../middleware/authMiddleware.js';
 import { body } from 'express-validator';
 import { registerValidator } from '../validator/authValidator.js';
+
 const router = Router();
 
 router.post('/register', 
